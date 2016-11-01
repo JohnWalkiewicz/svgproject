@@ -4,6 +4,162 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <!-- page content -->
+    <center><h1>SVG PROJECT</h1></center>
+    <p>Purpose: I chose to do this scene for my svg animation project becuase of the seasons that are coming up, especially christmas</p>
+    <svg width="100%" viewbox="0 0 200 100" style="background-color: lightskyblue">
+      <!--Clouds -->
+      <path d="M0,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M15,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M30,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M45,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M60,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M75,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M90,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M105,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M120,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M135,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M150,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M165,0 a10,10 0 0,0 20,0" fill="gray"/>
+      <path d="M180,0 a10,10 0 0,0 20,0" fill="gray"/>
+
+      <!--Groundsnow-->
+      <rect x="0" y="95" width="250" height="5" fill="white"/>
+      <!--Stumps-->
+      <rect x="17" y="80" width="6" height="15" fill="brown"/>
+
+      <rect x="175" y="80" width="6" height="15" fill="brown"/>
+      <!--Trees -->
+      <polygon points="20,45 10,55 30,55" fill="green"/>
+      <polygon points="20,53 10,63 30,63" fill="green"/>
+      <polygon points="20,61 10,71 30,71" fill="green"/>
+      <polygon points="20,69 10,79 30,79" fill="green"/>
+      <polygon points="20,77 10,87 30,87" fill="green"/>
+
+      <polygon points="178,45 168,55 188,55" fill="green"/>
+      <polygon points="178,53 168,63 188,63" fill="green"/>
+      <polygon points="178,61 168,71 188,71" fill="green"/>
+      <polygon points="178,69 168,79 188,79" fill="green"/>
+      <polygon points="178,77 168,87 188,87" fill="green"/>
+
+      <!---------------------------------Snowman---------------------------------------->
+      <!--First circle-->
+      <circle cx="100" cy="88" r="8" fill="white"/>
+      <!--second circle-->
+      <circle cx="100" cy="78" r="6" fill="white"/>
+      <!--third circle-->
+      <circle cx="100" cy="68.5" r="4" fill="white"/>
+      <!--eyes-->
+      <circle cx="99" cy="68" r=".5" fill="black"/>
+      <circle cx="102" cy="68" r=".5" fill="black"/>
+
+      <!--Buttons-->
+      <circle cx="100" cy="85" r=".5" fill="black"/>
+      <circle cx="100" cy="80" r=".5" fill="black"/>
+      <circle cx="100" cy="75" r=".5" fill="black"/>
+     <!--Nose-->
+     <polygon points="104,70 100,69 100,71" fill="orange"/>
+     <!--arms-->
+     <line x1="95" y1="77" x2="90" y2="85" stroke="brown" stroke-width="1"/>
+     <line x1="105" y1="77" x2="110" y2="85" stroke="brown" stroke-width="1"/>
+
+     <!--Light line-->
+     <line x1="20" y1="45" x2="178" y2="45" stroke="black" stroke-width="1"/>
+
+     <!--Lights-->
+     <circle cx="40" cy="46" r="1" fill="red">
+       <animate id="1redToBlue" attributeName="fill" from="red" to="blue" fill="freeze" dur=".5s" begin="0s; 1blueToRed.end"/>
+       <animate id="1blueToRed" attributeName="fill" from="blue" to="red" dur=".5s" fill="freeze" begin="0s; 1redToBlue.end"/>
+     </circle>
+     <circle cx="60" cy="46" r="1" fill="green">
+       <animate id="1greenToYellow" attributeName="fill" from="green" to="yellow" fill="freeze" dur=".5s" begin="0s; 1yellowToGreen.end"/>
+       <animate id="1yellowToGreen" attributeName="fill" from="yellow" to="green" dur=".5s" fill="freeze" begin="0s; 1greenToYellow.end"/>
+       </circle>
+     <circle cx="80" cy="46" r="1" fill="blue">
+       <animate id="2blueToRed" attributeName="fill" from="blue" to="red" fill="freeze" dur=".5s" begin="0s; 2redToBlue.end"/>
+       <animate id="2redToBlue" attributeName="fill" from="red" to="blue" dur=".5s" fill="freeze" begin="0s; 2blueToRed.end"/>
+       </circle>
+     <circle cx="100" cy="46" r="1" fill="yellow">
+       <animate id="2yellowToGreen" attributeName="fill" from="yellow" to="green" fill="freeze" dur=".5s" begin="0s; 2greenToYellow.end"/>
+       <animate id="2greenToYellow" attributeName="fill" from="green" to="yellow" dur=".5s" fill="freeze" begin="0s; 2yellowToGreen.end"/>
+       </circle>
+     <circle cx="120" cy="46" r="1" fill="pink">
+       </circle>
+     <circle cx="140" cy="46" r="1" fill="orange">
+       </circle>
+     <circle cx="160" cy="46" r="1" fill="purple">
+       </circle>
+
+     <!--Snow paritcles-->
+     <circle cx="10" cy="15" r="1" fill="white">
+     <animate id="fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; fall2.end"/>
+     <animate id="fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; fall1.end"/>
+     </circle>
+     <circle cx="20" cy="25" r="1" fill="white">
+     <animate id="2fall1" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 2fall2.end"/>
+     <animate id="2fall2" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 2fall1.end"/>
+     </circle>
+     <circle cx="30" cy="15" r="1" fill="white">
+     <animate id="3fall1" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 3fall2.end"/>
+     <animate id="3fall2" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 3fall1.end"/>
+       </circle>
+     <circle cx="40" cy="25" r="1" fill="white">
+     <animate id="4fall1"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 4fall2.end"/>
+     <animate id="4fall2"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 4fall1.end"/>
+       </circle>
+     <circle cx="50" cy="15" r="1" fill="white">
+     <animate id="5fall1" attributeName="cy" from="15" to="95" dur="10s"fill="freeze" begin="0s; 5fall2.end"/>
+     <animate id="5fall2" attributeName="cy" from="15" to="95" dur="10s"fill="freeze" begin="0s; 5fall1.end"/>
+       </circle>
+     <circle cx="60" cy="25" r="1" fill="white">
+     <animate id="6fall1"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 6fall2.end"/>
+     <animate id="6fall2"attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 6fall1.end"/>
+       </circle>
+     <circle cx="70" cy="15" r="1" fill="white">
+       <animate id="7fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 7fall2.end"/>
+       <animate id="7fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 7fall1.end"/>
+       </circle>
+     <circle cx="80" cy="25" r="1" fill="white">
+       <animate id="8fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 8fall2.end"/>
+       <animate id="8fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 8fall1.end"/>
+       </circle>
+     <circle cx="90" cy="15" r="1" fill="white">
+       <animate id="9fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 9fall2.end"/>
+       <animate id="9fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 9fall1.end"/>
+       </circle>
+     <circle cx="100" cy="25" r="1" fill="white">
+       <animate id="10fall1" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 10fall2.end"/>
+       <animate id="10fall2" attributeName="cy" from="25" to="95" dur="9s" fill="freeze" begin="0s; 10fall1.end"/>
+       </circle>
+     <circle cx="110" cy="15" r="1" fill="white">
+       <animate id="11fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 11fall2.end"/>
+       <animate id="11fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 11fall1.end"/>
+       </circle>
+     <circle cx="120" cy="25" r="1" fill="white">
+       <animate id="12fall1" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 12fall2.end"/>
+       <animate id="12fall2" attributeName="cy" from="15" to="95" dur="10s" fill="freeze" begin="0s; 12fall1.end"/>
+       </circle>
+     <circle cx="130" cy="15" r="1" fill="white">
+       <animate id="13fall1" attributeName="cy" from="25" to="95" dur="8s" fill="freeze" begin="0s; 13fall2.end"/>
+       <animate id="13fall2" attributeName="cy" from="25" to="95" dur="8s" fill="freeze" begin="0s; 13fall1.end"/>
+       </circle>
+     <circle cx="140" cy="25" r="1" fill="white">
+       <animate id="14fall1" attributeName="cy" from="15" to="95" dur="9s" fill="freeze" begin="0s; 14fall2.end"/>
+       <animate id="14fall2" attributeName="cy" from="15" to="95" dur="9s" fill="freeze" begin="0s; 14fall1.end"/>
+       </circle>
+     <circle cx="150" cy="15" r="1" fill="white">
+       <animate id="15fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 15fall2.end"/>
+       <animate id="15fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 15fall1.end"/>
+       </circle>
+     <circle cx="160" cy="25" r="1" fill="white">
+       <animate id="16fall1" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 16fall2.end"/>
+       <animate id="16fall2" attributeName="cy" from="15" to="95" dur="8s" fill="freeze" begin="0s; 16fall1.end"/>
+       </circle>
+     <circle cx="170" cy="15" r="1" fill="white">
+       <animate id="17fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall2.end"/>
+       <animate id="17fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall1.end"/>
+       </circle>
+</svg>
+
+    </svg>
   </body>
 </html>
