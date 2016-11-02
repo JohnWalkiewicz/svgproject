@@ -43,25 +43,53 @@
 
       <!---------------------------------Snowman---------------------------------------->
       <!--First circle-->
-      <circle cx="100" cy="88" r="8" fill="white"/>
+      <circle cx="100" cy="88" r="8" fill="white">
+        <animate id="1cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 1cRightToLeft.end"/>
+        <animate id="1cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 1cLeftToRight.end"/>
+        <animate id="1cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 1cRightToLeft.end"/>
+
+      </circle>
       <!--second circle-->
-      <circle cx="100" cy="78" r="6" fill="white"/>
+      <circle cx="100" cy="78" r="6" fill="white">
+        <animate id="2cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        </circle>
       <!--third circle-->
-      <circle cx="100" cy="68.5" r="4" fill="white"/>
+      <circle cx="100" cy="68.5" r="4" fill="white">
+        <animate id="3cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        </circle>
       <!--eyes-->
-      <circle cx="99" cy="68" r=".5" fill="black"/>
-      <circle cx="102" cy="68" r=".5" fill="black"/>
+      <circle cx="99" cy="68" r=".5" fill="black">
+        <animate id="1eyeMiddleLeftToRight" attributeName="cx" from="99" to="159" fill="freeze" dur="2s"/>
+        </circle>
+      <circle cx="102" cy="68" r=".5" fill="black">
+        <animate id="2eyeMiddleLeftToRight" attributeName="cx" from="102" to="162" fill="freeze" dur="2s"/>
+        </circle>
 
       <!--Buttons-->
-      <circle cx="100" cy="85" r=".5" fill="black"/>
-      <circle cx="100" cy="80" r=".5" fill="black"/>
-      <circle cx="100" cy="75" r=".5" fill="black"/>
+      <circle cx="100" cy="85" r=".5" fill="black">
+        <animate id="1bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        </circle>
+      <circle cx="100" cy="80" r=".5" fill="black">
+        <animate id="2bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+      </circle>
+      <circle cx="100" cy="75" r=".5" fill="black">
+        <animate id="3bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+      </circle>
      <!--Nose-->
-     <polygon points="104,70 100,69 100,71" fill="orange"/>
+     <polygon points="104,70 100,69 100,71" fill="orange">
+       <animate id="1tMiddleLeftToRight" attributeName="points" from="104,70 100,69 100,71" to="164,70 160,69 160,71" fill="freeze" dur="2s"/>
+     </polygon>
      <!--arms-->
-     <line x1="95" y1="77" x2="90" y2="85" stroke="brown" stroke-width="1"/>
-     <line x1="105" y1="77" x2="110" y2="85" stroke="brown" stroke-width="1"/>
+     <line x1="95" y1="77" x2="90" y2="85" stroke="brown" stroke-width="1">
+     <animate id="1linePoint1MiddleLeftToRight" attributeName="x1" from="95" to="155" fill="freeze" dur="2s"/>
+     <animate id="1linePoint2lMiddleLeftToRight" attributeName="x2" from="90" to="150" fill="freeze" dur="2s"/>
+   </line>
 
+
+     <line x1="105" y1="77" x2="110" y2="85" stroke="brown" stroke-width="1">
+     <animate id="2linePoint1MiddleLeftToRight" attributeName="x1" from="105" to="165" fill="freeze" dur="2s"/>
+     <animate id="2linePoint2lMiddleLeftToRight" attributeName="x2" from="110" to="170" fill="freeze" dur="2s"/>
+     </line>
      <!--Light line-->
      <line x1="20" y1="45" x2="178" y2="45" stroke="black" stroke-width="1"/>
 
