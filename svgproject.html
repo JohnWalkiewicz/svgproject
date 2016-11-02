@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="svgproject.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
   </head>
   <body>
     <center><h1>SVG PROJECT</h1></center>
@@ -122,6 +123,7 @@
 
      <!--Lights-->
      <circle cx="40" cy="46" r="1" fill="red">
+
        <animate id="1redToBlue" attributeName="fill" from="red" to="blue" fill="freeze" dur=".5s" begin="0s; 1blueToRed.end"/>
        <animate id="1blueToRed" attributeName="fill" from="blue" to="red" dur=".5s" fill="freeze" begin="0s; 1redToBlue.end"/>
      </circle>
@@ -219,6 +221,14 @@
        <animate id="17fall1" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall2.end"/>
        <animate id="17fall2" attributeName="cy" from="25" to="95" dur="10s" fill="freeze" begin="0s; 17fall1.end"/>
        </circle>
+
+       <!--Sun-->
+       <circle cx="200" cy ="15" r="10" fill="yellow">
+         <animate attributeName="fill" from="yellow" to="orange" dur="3s" begin="mouseover"/>
+         </circle>
+       <!--Hover text-->
+         <text x="190" y="15" font-family="sans-serif" font-size="3" fill="orange" >Hover </text>
+         <text x="195" y="20" font-family="sans-serif" font-size="3" fill="orange" >me </text>
 </svg>
 
     </svg>
