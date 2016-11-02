@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="svgproject.css">
   </head>
   <body>
     <center><h1>SVG PROJECT</h1></center>
@@ -51,44 +52,70 @@
       </circle>
       <!--second circle-->
       <circle cx="100" cy="78" r="6" fill="white">
-        <animate id="2cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        <animate id="2cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 2cRightToLeft.end"/>
+        <animate id="2cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 2cLeftToRight.end"/>
+        <animate id="2cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 2cRightToLeft.end"/>
         </circle>
       <!--third circle-->
       <circle cx="100" cy="68.5" r="4" fill="white">
-        <animate id="3cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        <animate id="3cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 3cRightToLeft.end"/>
+        <animate id="3cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 3cLeftToRight.end"/>
+        <animate id="3cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 3cRightToLeft.end"/>
         </circle>
       <!--eyes-->
       <circle cx="99" cy="68" r=".5" fill="black">
-        <animate id="1eyeMiddleLeftToRight" attributeName="cx" from="99" to="159" fill="freeze" dur="2s"/>
+        <animate id="1eyeMiddleLeftToRight" attributeName="cx" from="99" to="159" fill="freeze" dur="2s" begin="0s; 1eyeRightToLeft.end"/>
+        <animate id="1eyeRightToLeft" attributeName="cx" from="159" to="39" fill="freeze" dur="4s"  begin="0s; 1eyeLeftToRight.end"/>
+        <animate id="1eyeLeftToRight" attributeName="cx" from="39" to="159" fill="freeze" dur="4s"  begin="0s; 1eyeRightToLeft.end"/>
         </circle>
       <circle cx="102" cy="68" r=".5" fill="black">
-        <animate id="2eyeMiddleLeftToRight" attributeName="cx" from="102" to="162" fill="freeze" dur="2s"/>
+        <animate id="2eyeMiddleLeftToRight" attributeName="cx" from="102" to="162" fill="freeze" dur="2s" begin="0s; 2eyeRightToLeft.end"/>
+        <animate id="2eyeRightToLeft" attributeName="cx" from="162" to="42" fill="freeze" dur="4s"  begin="0s; 2eyeLeftToRight.end"/>
+        <animate id="2eyeLeftToRight" attributeName="cx" from="42" to="162" fill="freeze" dur="4s"  begin="0s; 2eyeRightToLeft.end"/>
         </circle>
 
       <!--Buttons-->
       <circle cx="100" cy="85" r=".5" fill="black">
-        <animate id="1bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        <animate id="1bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 1bRightToLeft.end"/>
+        <animate id="1bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 1bLeftToRight.end"/>
+        <animate id="1bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 1bRightToLeft.end"/>
         </circle>
       <circle cx="100" cy="80" r=".5" fill="black">
-        <animate id="2bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        <animate id="2bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="2bRightToLeft.end"/>
+        <animate id="2bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 2bLeftToRight.end"/>
+        <animate id="2bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 2bRightToLeft.end"/>
       </circle>
       <circle cx="100" cy="75" r=".5" fill="black">
-        <animate id="3bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s"/>
+        <animate id="3bMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 3bRightToLeft.end"/>
+        <animate id="3bRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 3bLeftToRight.end"/>
+        <animate id="3bLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 3bRightToLeft.end"/>
       </circle>
      <!--Nose-->
      <polygon points="104,70 100,69 100,71" fill="orange">
-       <animate id="1tMiddleLeftToRight" attributeName="points" from="104,70 100,69 100,71" to="164,70 160,69 160,71" fill="freeze" dur="2s"/>
+       <animate id="1tMiddleLeftToRight" attributeName="points" from="104,70 100,69 100,71" to="164,70 160,69 160,71" fill="freeze" dur="2s" begin="0s; 1tRightToLeft.end"/>
+       <animate id="1tRightToLeft" attributeName="points" from="164,70 160,69 160,71" to="44,70 40,69 40,71" fill="freeze" dur="4s" begin="0s; 1tLeftToRight.end"/>
+       <animate id="1tLeftToRight" attributeName="points" from="44,70 40,69 40,71" to="164,70 160,69 160,71" fill="freeze" dur="4s" begin="0s; 1tRightToLeft.end"/>
      </polygon>
      <!--arms-->
      <line x1="95" y1="77" x2="90" y2="85" stroke="brown" stroke-width="1">
-     <animate id="1linePoint1MiddleLeftToRight" attributeName="x1" from="95" to="155" fill="freeze" dur="2s"/>
-     <animate id="1linePoint2lMiddleLeftToRight" attributeName="x2" from="90" to="150" fill="freeze" dur="2s"/>
+     <animate id="1linePoint1MiddleLeftToRight" attributeName="x1" from="95" to="155" fill="freeze" dur="2s" begin="0s; 1linePoint1RightToLeft.end"/>
+     <animate id="1linePoint1RightToLeft" attributeName="x1" from="155" to="35" fill="freeze" dur="4s" begin="0s; 1linePoint1LeftToRight.end"/>
+     <animate id="1linePoint1LeftToRight" attributeName="x1" from="35" to="155" fill="freeze" dur="4s" begin="0s; 1linePoint1RightToLeft.end"/>
+
+     <animate id="1linePoint2lMiddleLeftToRight" attributeName="x2" from="90" to="150" fill="freeze" dur="2s" begin="1linePoint2RightToLeft.end"/>
+     <animate id="1linePoint2RightToLeft" attributeName="x2" from="150" to="30" fill="freeze" dur="4s" begin="0s; 1linePoint2LeftToRight.end"/>
+     <animate id="1linePoint2LeftToRight" attributeName="x2" from="30" to="150" fill="freeze" dur="4s" begin="0s; 1linePoint2RightToLeft.end"/>
    </line>
 
 
      <line x1="105" y1="77" x2="110" y2="85" stroke="brown" stroke-width="1">
-     <animate id="2linePoint1MiddleLeftToRight" attributeName="x1" from="105" to="165" fill="freeze" dur="2s"/>
-     <animate id="2linePoint2lMiddleLeftToRight" attributeName="x2" from="110" to="170" fill="freeze" dur="2s"/>
+     <animate id="2linePoint1MiddleLeftToRight" attributeName="x1" from="105" to="165" fill="freeze" dur="2s" begin="0s; 2linePoint1RightToLeft.end"/>
+     <animate id="2linePoint1RightToLeft" attributeName="x1" from="165" to="45" fill="freeze" dur="4s" begin="0s; 2linePoint1LeftToRight.end"/>
+     <animate id="2linePoint1LeftToRight" attributeName="x1" from="45" to="165" fill="freeze" dur="4s" begin="0s; 2linePoint1RightToLeft.end"/>
+
+     <animate id="2linePoint2lMiddleLeftToRight" attributeName="x2" from="110" to="170" fill="freeze" dur="2s" begin="0s; 2linePoint2RightToLeft.end"/>
+     <animate id="2linePoint2RightToLeft" attributeName="x2" from="170" to="50" fill="freeze" dur="4s" begin="0s; 2linePoint2LeftToRight.end"/>
+     <animate id="2linePoint2LeftToRight" attributeName="x2" from="50" to="170" fill="freeze" dur="4s" begin="0s; 2linePoint2RightToLeft.end"/>
      </line>
      <!--Light line-->
      <line x1="20" y1="45" x2="178" y2="45" stroke="black" stroke-width="1"/>
