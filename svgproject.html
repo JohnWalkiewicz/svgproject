@@ -7,7 +7,8 @@
   </head>
   <body>
     <center><h1>SVG PROJECT</h1></center>
-    <p>Purpose: I chose to do this scene for my svg animation project becuase of the seasons that are coming up, especially christmas</p>
+    <p>This scene depicts snowman in the winter during christmas.<br></br> At the same time there is snowfalling and the lights are blinking, signaling Christmas is coming<br></br>If you touch the snowman he gets mad and turns red. Also, the sun will dissapear if you hover over it!</p>
+    <p>Purpose: I made this scene for my svg project because I thought that since Christmas was coming up, this would be a good time to make this scene. Also, Christmas is probably my favorite holiday of the year so thats another reason I guess. </p>
     <svg width="100%" viewbox="0 0 200 100" style="background-color: lightskyblue">
       <!--Clouds -->
       <path d="M0,0 a10,10 0 0,0 20,0" fill="gray"/>
@@ -49,6 +50,7 @@
         <animate id="1cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 1cRightToLeft.end"/>
         <animate id="1cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 1cLeftToRight.end"/>
         <animate id="1cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 1cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
 
       </circle>
       <!--second circle-->
@@ -56,12 +58,14 @@
         <animate id="2cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 2cRightToLeft.end"/>
         <animate id="2cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 2cLeftToRight.end"/>
         <animate id="2cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 2cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
         </circle>
       <!--third circle-->
       <circle cx="100" cy="68.5" r="4" fill="white">
         <animate id="3cMiddleLeftToRight" attributeName="cx" from="100" to="160" fill="freeze" dur="2s" begin="0s; 3cRightToLeft.end"/>
         <animate id="3cRightToLeft" attributeName="cx" from="160" to="40" fill="freeze" dur="4s" begin="0s; 3cLeftToRight.end"/>
         <animate id="3cLeftToRight" attributeName="cx" from="40" to="160" fill="freeze" dur="4s" begin="0s; 3cRightToLeft.end"/>
+        <animate attributeName="fill" from="white" to="red" dur="2s" begin="click"/>
         </circle>
       <!--eyes-->
       <circle cx="99" cy="68" r=".5" fill="black">
@@ -223,12 +227,12 @@
        </circle>
 
        <!--Sun-->
-       <circle cx="200" cy ="15" r="10" fill="yellow">
-         <animate attributeName="fill" from="yellow" to="orange" dur="3s" begin="mouseover"/>
+       <circle cx="200" cy ="15" r="10" fill-opacity="0.75" fill="yellow">
+         <animate attributeName="opacity" from="0.75" to="0" dur="3s" fill="freeze" begin="mouseover"/>
          </circle>
        <!--Hover text-->
-         <text x="190" y="15" font-family="sans-serif" font-size="3" fill="orange" >Hover </text>
-         <text x="195" y="20" font-family="sans-serif" font-size="3" fill="orange" >me </text>
+         <text x="190" y="15" font-family="sans-serif" font-size="3" fill="lightskyblue" >Hover </text>
+         <text x="195" y="20" font-family="sans-serif" font-size="3" fill="lightskyblue" >me </text>
 </svg>
 
     </svg>
